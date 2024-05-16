@@ -167,7 +167,7 @@ export const DashboardPage = () => {
                                             <th>Status</th>
                                             <td class="text-muted">
 
-                                                {vaccinations1?.vaccinator?.name != null ? (
+                                                {vaccinations1?.vaccine?.name != null ? (
                                                     <span class="badge badge-success">Done</span>
                                                 ) : (
                                                     <span class="badge badge-info">Registered</span>
