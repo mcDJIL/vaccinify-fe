@@ -18,8 +18,8 @@ export const ConsultationsPage = () => {
         event.preventDefault();
 
         let body = {
-            disease_history: inputDisease.current.value,
-            current_symptoms: inputSymptoms.current.value,
+            disease_history: inputDisease?.current?.value ?? '-',
+            current_symptoms: inputSymptoms?.current?.value ?? '-',
         }
 
         client.post(`v1/consultations?token=${token}`, body).then(({data}) => {
